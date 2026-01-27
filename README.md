@@ -127,16 +127,27 @@ banking-modern-datastack/
 
 ---
 
-## 📊 Final Deliverables  
-- **Automated CDC pipeline** from Postgres → Snowflake  
-- **DBT models** (facts, dimensions, snapshots)  
-- **Orchestrated DAGs in Airflow**  
-- **Synthetic banking dataset** for demos  
-- **CI/CD workflows** ensuring reliability  
+## 📊 Final Deliverables
+
+- End-to-end CDC pipeline from **PostgreSQL → Snowflake**
+- Analytics-ready **dbt models** (fact, dimension, snapshots)
+- Fully orchestrated workflows using **Apache Airflow**
+- Containerized infrastructure with **Docker & docker-compose**
+- **CI/CD-enabled** data workflows using GitHub Actions
 
 ---
 
-**Idea by**: *Jaya Chandra Kadiveti*  
+## 🧠 Key Learnings
+
+- Designing reliable **CDC-based data pipelines**
+- Implementing **Medallion Architecture** (Bronze, Silver, Gold)
+- Managing **Slowly Changing Dimensions (SCD Type-2)** with dbt
+- Orchestrating complex data workflows using **Airflow**
+- Applying **CI/CD best practices** in data engineering projects
+
+---
+
+**Concept inspired by**: *Jaya Chandra Kadiveti*
 
 
 
