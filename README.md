@@ -79,7 +79,7 @@ banking-modern-datastack/
 ├── postgres/
 │   └── schema.sql              # OLTP schema
 ├── docker-compose.yml
-├── dockerfile-airflow.dockerfile
+├── dockerfile
 ├── requirements.txt
 └── README.md
 ```
@@ -148,6 +148,7 @@ banking-modern-datastack/
 ---
 
 **Concept inspired by**: *Jaya Chandra Kadiveti*
+
 
 
 
