@@ -1,27 +1,100 @@
-# GitHub Actions cache
-/.github/.cache
-
-# Docker cache
-docker/logs/
-*.log
-docker/minio/
-docker/plugins/
-docker/postgres/
-
-# DBT cache
-banking_dbt/.dbt/
-banking_dbt/analyses/
-banking_dbt/logs/
-banking_dbt/macros/
-banking_dbt/seeds/
-banking_dbt/target/
-banking_dbt/tests/
-
-.env
+# =====================
+# Python bytecode / cache
+# =====================
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# =====================
+# Virtual environments
+# =====================
+.venv/
+venv/
+env/
+ENV/
+dbt_venv/
+
+# =====================
+# Python tooling / test artifacts
+# =====================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+# =====================
+# Build / packaging artifacts
+# =====================
+build/
+dist/
+site/
+.eggs/
+*.egg-info/
+pip-wheel-metadata/
+
+# =====================
+# Environment / secrets
+# Keep example env files if you add them explicitly.
+# =====================
+.env
+.env.*
+!.env.example
+!.env.template
+!.env.sample
+!**/.env.example
+!**/.env.template
+!**/.env.sample
+
+# =====================
+# Logs
+# =====================
+logs/
+*.log
+
+# =====================
+# Airflow runtime
+# =====================
+airflow.db
+airflow-webserver.pid
+standalone_admin_password.txt
+docker/logs/
+
+# =====================
+# dbt local runtime / generated files
+# Keep models, macros, tests, seeds, snapshots, analyses.
+# =====================
+banking_dbt/.dbt/
+banking_dbt/target/
+banking_dbt/logs/
+banking_dbt/dbt_packages/
+banking_dbt/dbt_internal_packages/
+
+# =====================
+# Docker / local service runtime data
+# =====================
+docker/postgres/data/
+docker/minio/data/
+
+# =====================
+# Editor / IDE
+# =====================
 .vscode/
 .idea/
+
+# =====================
+# OS / notebook noise
+# =====================
 .DS_Store
+Thumbs.db
+.ipynb_checkpoints/
+
+# =====================
+# CI / local overrides
+# =====================
 docker-compose.override.yml
-logs/
+.github/.cache/
