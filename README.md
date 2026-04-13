@@ -145,10 +145,6 @@ banking-modern-datastack/
 - Orchestrating complex data workflows using **Airflow**
 - Applying **CI/CD best practices** in data engineering projects
 
----
-
-**Concept inspired by**: *Jaya Chandra Kadiveti*
-
 
 
 
