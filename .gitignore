@@ -98,3 +98,6 @@ Thumbs.db
 # =====================
 docker-compose.override.yml
 .github/.cache/
+
+# BI
+*.pbix
