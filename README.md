@@ -147,6 +147,8 @@ banking-modern-datastack/
 
 ---
 
+**Concept inspired by**: *Jaya Chandra Kadiveti*
+
 
 
 
