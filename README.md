@@ -25,11 +25,16 @@ Pipeline flow:
 ## 🔄 Data Pipeline
 
 - **Extract / Ingest:** `data-generator/faker_generator.py` creates source records in PostgreSQL using `postgres/schema.sql`. `kafka-debezium/generate_and_post_connector.py` registers the Debezium connector for `public.customers`, `public.accounts`, and `public.transactions`.
+
 - **Transform:** `consumer/kafka_to_minio.py` extracts `payload.after` from CDC messages and writes Parquet files. dbt models parse Snowflake raw data into `stg_customers`, `stg_accounts`, and `stg_transactions`.
-- **Load:** `docker/dags/minion_to_snowflake.py` loads MinIO Parquet files into Snowflake with `COPY INTO`. TODO: add Snowflake RAW table DDL scripts; dbt expects a source column named `v`.
+
+- **Load:** `docker/dags/minion_to_snowflake.py` loads MinIO Parquet files into Snowflake with `COPY INTO`.
+
 - **Orchestration:** Docker Compose runs PostgreSQL, Kafka, Zookeeper, Debezium Connect, MinIO, pgAdmin, Airflow, and the Kafka consumer. Airflow DAGs include `minio_to_snowflake_banking` and `SCD2_snapshots`.
-- **Data Quality / Validation:** PostgreSQL constraints enforce keys, relationships, unique emails, non-negative balances, and positive transaction amounts. GitHub Actions runs Ruff, placeholder pytest execution, and `dbt compile`. TODO: add dbt tests for `not_null`, `unique`, `relationships`, accepted values, and source freshness.
-- **Analytics / Dashboard:** dbt builds `dim_customer`, `dim_account`, and `fact_transaction`. `banking.pbix` is included for Power BI reporting. TODO: add dashboard screenshots.
+
+- **Data Quality / Validation:** PostgreSQL constraints enforce keys, relationships, unique emails, non-negative balances, and positive transaction amounts. GitHub Actions runs Ruff, placeholder pytest execution, and `dbt compile`.
+
+- **Analytics / Dashboard:** dbt builds `dim_customer`, `dim_account`, and `fact_transaction`. `banking.pbix` is included for Power BI reporting.
 
 ## 🛠 Tech Stack
 
