@@ -37,10 +37,8 @@ Pipeline flow:
 
 <p>
   <img src="https://cdn.simpleicons.org/apacheairflow" height="40"/>
-  <img src="https://cdn.simpleicons.org/dbt" height="40"/>
   <img src="https://cdn.simpleicons.org/snowflake" height="40"/>
-  <img src="https://cdn.simpleicons.org/apachekafka" height="40"/>
-  <img src="https://cdn.simpleicons.org/powerbi" height="40"/>
+  <img src="https://github.com/microsoft/PowerBI-Icons/blob/main/PNG/Power-BI.png" height="40"/>
 </p>
 
 ## 📂 Project Structure
