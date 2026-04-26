@@ -128,7 +128,7 @@ Use `--once` for a single generator iteration. The Kafka consumer writes files a
 - Analytics marts: `dim_customer`, `dim_account`, and `fact_transaction`.
 - Power BI report file: `banking.pbix`.
 
-![Banking Operations Dashboard](img/dashboard.png)
+![Banking Operations Dashboard](img/banking.png)
 
 ## 💡 Key Learnings
 
