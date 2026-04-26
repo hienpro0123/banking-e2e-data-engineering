@@ -35,7 +35,11 @@ Pipeline flow:
 
 ![Tech Stack](https://skillicons.dev/icons?i=py,docker,postgres,kafka,git,githubactions)
 
-Additional tools used: Apache Airflow, Debezium, dbt, Snowflake, MinIO, Power BI, Faker, Pandas, Boto3, Fastparquet, and SQL.
+<p>
+  <img src="https://cdn.simpleicons.org/apacheairflow" height="40"/>
+  <img src="https://cdn.simpleicons.org/snowflake" height="40"/>
+  <img src="https://github.com/microsoft/PowerBI-Icons/blob/main/PNG/Power-BI.png" height="40"/>
+</p>
 
 ## 📂 Project Structure
 
@@ -141,11 +145,3 @@ TODO: add screenshots of Airflow, MinIO, Snowflake, and Power BI outputs.
 - Add structured logging, Airflow alerts, and consumer metrics.
 - Chain the dbt mart refresh task after snapshots in Airflow.
 - Add cloud deployment notes and dashboard screenshots.
-
-## 📬 Contact
-
-TODO: Add your preferred contact details.
-
-- GitHub: `<your-github-profile>`
-- LinkedIn: `<your-linkedin-profile>`
-- Email: `<your-email>`
