@@ -128,7 +128,7 @@ Use `--once` for a single generator iteration. The Kafka consumer writes files a
 - Analytics marts: `dim_customer`, `dim_account`, and `fact_transaction`.
 - Power BI report file: `banking.pbix`.
 
-TODO: add screenshots of Airflow, MinIO, Snowflake, and Power BI outputs.
+![Banking Operations Dashboard](img/dashboard.png)
 
 ## 💡 Key Learnings
 
